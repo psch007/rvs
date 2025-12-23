@@ -115,15 +115,24 @@
 
         /* --- ADAPTATION MOBILE --- */
         @media (max-width: 820px){
-            .header-banner { --banner-height: 300px; }
+            .header-banner { 
+                --banner-height: 280px; /* On réduit la hauteur sur mobile */
+                background-image: url('2030/banniere_2030.jpg');
+                background-position: center center; /* CENTRE l'image pour ne pas qu'elle soit "mangée" sur les côtés */
+                background-size: cover; /* Remplit tout l'espace disponible */
+            }
             .banner-title { left: 20px; bottom: 10px; }
-            .banner-title h1 { font-size: 30px; }
-            .banner-title h2 { font-size: 18px; }
+            .banner-title h1 { font-size: 28px; } /* Texte un peu plus petit pour smartphone */
+            .banner-title h2 { font-size: 16px; }
+
+            /* Ajustements Lightbox pour le pouce */
             .lb-prev{ left: 8px; }
             .lb-next{ right: 8px; }
             .lb-play{ bottom: 8px; left: 50%; transform: translateX(-50%); top: auto; }
+            
+            /* Menu sur plusieurs lignes */
             .nav-archives { gap: 4px; padding: 8px 4px; }
-            .nav-archives a { font-size: 14px; padding: 3px 6px; }
+            .nav-archives a { font-size: 13px; padding: 4px 6px; }
         }
     </style>
 </head>
@@ -131,29 +140,6 @@
 
 <nav class="nav-archives">
     <a href="index.html">Accueil</a>
-    <a href="archives-2025.html">2025</a>
-    <a href="archives-2024.html">2024</a>
-    <a href="archives-2023.html">2023</a>
-    <a href="archives-2022.html">2022</a>
-    <a href="archives-2021.html">2021</a>
-    <a href="archives-2020.html">2020</a>
-    <a href="archives-2019.html">2019</a>
-    <a href="archives-2018.html">2018</a>
-    <a href="archives-2017.html">2017</a>
-    <a href="archives-2016.html">2016</a>
-    <a href="archives-2015.html">2015</a>
-    <a href="archives-2014.html">2014</a>
-    <a href="archives-2013.html">2013</a>
-    <a href="archives-2012.html">2012</a>
-    <a href="archives-2011.html">2011</a>
-    <a href="archives-2010.html">2010</a>
-    <a href="archives-2009.html">2009</a>
-    <a href="archives-2008.html">2008</a>
-    <a href="archives-2007.html">2007</a>
-    <a href="archives-2006.html">2006</a>
-    <a href="archives-2005.html">2005</a>
-    <a href="archives-2004.html">2004</a>
-    <a href="archives-2003.html">2003</a>
 </nav>
 
 <div class="header-banner">
