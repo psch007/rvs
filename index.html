@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARCHIVES — Les Randonneurs Vosgiens de Schirmeck</title>
+    <style>
+        :root {
+            --bg: #47c27f;    /* Votre vert */
+            --text: #1a597c;  /* Votre bleu */
+            --card: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Bannière */
+        .header-banner {
+            height: 550px; /* Agrandie pour plus d'impact */
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), 
+                        url('banniere_index.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        .header-title {
+            color: white;
+            padding: 60px; 
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+            line-height: 1.1;
+        }
+
+        .header-title h1 { 
+            margin: 0; 
+            font-size: 4em; 
+            text-transform: uppercase;
+        }
+
+        .header-title span { 
+            display: block; 
+            font-size: 0.4em;
+            font-weight: normal;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+
+        /* Conteneur principal avec espace par rapport à la bannière */
+        .container {
+            max-width: 1000px;
+            margin: 60px auto 80px; /* "60px" crée l'espace sous la photo */
+            background: var(--card);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        /* Section Citation & Poème */
+        .intro-section {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 40px;
+        }
+
+        .citation-container {
+            margin-bottom: 30px;
+        }
+
+        .citation {
+            font-style: italic;
+            font-size: 1.5em;
+            color: var(--text); /* Même couleur que la citation */
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .auteur {
+            display: block;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--text); /* Couleur harmonisée avec la citation */
+        }
+
+        .poeme {
+            font-size: 1.15em;
+            color: #444;
+            max-width: 800px;
+            margin: 25px auto 0;
+            text-align: center;
+        }
+
+        /* Grille des Années */
+        .grid-annees {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .annee-link {
+            text-decoration: none;
+            background: #f8fcfb;
+            color: var(--text);
+            border: 2px solid var(--bg);
+            padding: 35px 10px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .annee-link:hover {
+            background: var(--text);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .annee-link span {
+            display: block;
+            font-size: 0.45em;
+            font-weight: normal;
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            text-align: center;
+            padding-bottom: 40px;
+            color: white;
+            font-size: 0.9em;
+            opacity: 0.9;
+
+/* --- ADAPTATION MOBILE POUR INDEX --- */
+        @media (max-width: 768px) {
+            /* On réduit la hauteur de la bannière */
+            .header-banner {
+                height: 350px;
+            }
+
+            /* On adapte la taille du titre pour qu'il ne déborde pas */
+            .header-title {
+                padding: 30px;
+            }
+
+            .header-title h1 {
+                font-size: 2.2em; /* Titre plus petit sur mobile */
+            }
+
+            /* On réduit les marges du conteneur pour gagner de la place */
+            .container {
+                margin: 20px 15px;
+                padding: 25px 15px;
+            }
+
+            .citation {
+                font-size: 1.2em;
+            }
+
+            /* La grille passe à 1 seule colonne sur les petits écrans */
+            .grid-annees {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .annee-link {
+                padding: 20px 10px;
+                font-size: 1.5em;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header-banner">
+      <div class="header-title">
+        <h1>Archives<br>
+          <span>Randonneurs Vosgiens de Schirmeck</span></h1>
+      </div>
+    </div>
+    <div class="container">
+      <section class="intro-section">
+        <div class="citation-container"> <span class="citation">"La montagne
+            nous offre le décor, à nous d'inventer l'histoire qui va avec."</span>
+          <i><span class="auteur">Nicolas Helmbacher</span></i> </div>
+        <div class="poeme">
+          <p> Le chemin est un trait d'union entre nos vies. Depuis maintenant
+            plus de 50 ans, nos pas ont marqué les sentiers des Vosges et
+            d'ailleurs, mais ce sont nos rires et nos silences partagés qui ont
+            dessiné ces souvenirs...</p>
+          <p> Cette archive est le refuge de nos instants de bonheur : la
+            lumière d'un matin au Nideck, la fraîcheur d'une cascade, la chaleur
+            d'une tablée après l'effort...</p>
+        </div>
+      </section>
+      <div class="grid-annees"> 
+        <a href="archives-2025.html" class="annee-link" target="_blank" rel="noopener">2025</a>
+        <a href="archives-2024.html" class="annee-link" target="_blank" rel="noopener">2024</a> 
+        <a href="archives-2023.html" class="annee-link" target="_blank" rel="noopener">2023</a> 
+        <a href="archives-2022.html" class="annee-link" target="_blank" rel="noopener">2022</a>
+        <a href="archives-2021.html" class="annee-link" target="_blank" rel="noopener">2021</a> 
+        <a href="archives-2020.html" class="annee-link" target="_blank" rel="noopener">2020</a> 
+        <a href="archives-2019.html" class="annee-link" target="_blank" rel="noopener">2019</a>
+        <a href="archives-2018.html" class="annee-link" target="_blank" rel="noopener">2018</a> 
+        <a href="archives-2017.html" class="annee-link" target="_blank" rel="noopener">2017</a> 
+      </div>
+    </div>
+    <footer> © Randonneurs Vosgiens de Schirmeck — Mémoire de nos randonnées </footer>
+  </body>
+</html>
